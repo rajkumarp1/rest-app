@@ -50,6 +50,7 @@ public class EmployeeController {
 	@RequestMapping(value="/update",method=RequestMethod.PUT)
 	public ResponseEntity<Employee> updateEmp(@RequestBody ObjectNode obj){
 		int id=obj.get("emp_id").intValue();
+		System.out.println("app branch");
 		float salary=obj.get("emp_salary").floatValue();
 		Employee emp=service.updateEmp(id, salary);
 		if(emp!=null)
