@@ -31,7 +31,7 @@ public class EmployeeController {
 	@RequestMapping(value="/add",method=RequestMethod.POST)
 	public ResponseEntity<Employee> addEmp(@RequestBody Employee obj){
 		Employee emp=service.saveEmp(obj);
-		System.out.prinln("Hello team this is Raj");
+		System.out.prinln("Hello team this is RajKumar");
 		if(emp!=null)
 			return new ResponseEntity<Employee>(emp,HttpStatus.CREATED);
 		else
