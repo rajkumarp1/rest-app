@@ -20,6 +20,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 	private EmployeeDAO dao;
 	
 	private int i=100;
+
+        //private int j=50;
 	
 	//private int j=50;
 
